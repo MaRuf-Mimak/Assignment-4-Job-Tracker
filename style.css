@@ -55,10 +55,27 @@ body {
 }
 
 .job-card {
-  background: white;
+  background: rgb(240, 238, 238);
   padding: 15px;
-  border-radius: 8px;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: 3, 1fr;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  justify-items: flex-start;
+  box-shadow: 0 3px 12px rgb(133, 127, 127);
 }
+
+/* .job-card {
+  position: relative; 
+  background:rgb(240, 238, 238);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+  
+} */
 
 .job-card h3 {
   margin: 0 0 5px;
@@ -69,9 +86,67 @@ body {
   display: flex;
   gap: 8px;
 }
+.interview-btn {
+  border: 1px solid #16a34a;
+  color: #16a34a;
+  background: transparent;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.rejected-btn {
+  border: 1px solid #dc2626;
+  color: #dc2626;
+  background: transparent;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+
 
 button.action {
   flex: 1;
   padding: 6px;
   cursor: pointer;
+}
+
+.delete-btn {
+  position:relative;
+  /* margin-top: 10px; */
+  /* background: rgb(27, 27, 27); */
+  color: rgb(20, 19, 19);
+  border: none;
+  padding: 6px;
+  /* width: 100%; */
+  cursor: pointer;
+  justify-content:right;
+  justify-items: right;
+  text-align: right;
+  margin-left: 270px;
+  /* padding-top: 20px; */
+  
+}
+/* .delete-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #64748b;
+} */
+
+.delete-btn:hover {
+  color: #dc2626;
+}
+.no-jobs{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 200px;
+   width: 150px;
+   text-align: center;
+
 }
