@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f6f9;
+}
+
+.dashboard {
+  padding: 20px;
+  /* background: #1e1e2f; */
+  /* color: white; */
+}
+
+.stats {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.stat-card {
+  background: #dadae2;
+  padding: 15px;
+  border-radius: 8px;
+  flex: 1;
+  text-align: center;
+}
