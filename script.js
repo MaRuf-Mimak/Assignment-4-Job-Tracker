@@ -145,26 +145,7 @@ document.addEventListener("click", function (e) {
     renderJobs();
   }
 
-  // if (e.target.classList.contains("interview-btn")) {
-  //   const id = Number(e.target.dataset.id);
-  //   const job = jobs.find(j => j.id === id);
-  //   job.status = job.status === "interview" ? "all" : "interview";
-  //   renderJobs();
-  // }
-
-  // if (e.target.classList.contains("rejected-btn")) {
-  //   const id = Number(e.target.dataset.id);
-  //   const job = jobs.find(j => j.id === id);
-  //   job.status = job.status === "rejected" ? "all" : "rejected";
-  //   renderJobs();
-  // }
-
-  // if (e.target.classList.contains("delete-btn")) {
-  //   const id = Number(e.target.dataset.id);
-  //   const index = jobs.findIndex(j => j.id === id);
-  //   jobs.splice(index, 1);
-  //   renderJobs();
-  // }
+ 
 const interviewBtn = e.target.closest(".interview-btn");
 if (interviewBtn) {
   const id = Number(interviewBtn.dataset.id);
